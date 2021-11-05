@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style2.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <h1>POMODORO TIMER</h1>
+    <div id="container">
+        <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p><p id="long-break" class="label">Long break:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="w_minutes">25</p><p class="semicolon">:</p><p id="w_seconds">00</p>
+        </div>
+
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">5</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+        </div>
+        <div id="long-break-timer" class="timer">
+            <p id="l_minutes">15</p><p class="semicolon">:</p><p id="l_seconds">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+        <button id="longbreak" class="btn">Long break</button>
+        <button id="breaktime" class="btn">Break</button>
+</div>
+<div id = image align="center">
+<img 
+alt="" 
+src="spring.PNG";
+style="top: 40px; left: 40px" id="imgClickAndChange" onclick="changeImage()"/>
+</div>
+
+<div>
+    <audio id="myAudio">
+        <source src="piano.mp3" type="audio/mpeg">
+      </audio>
+      
+      <p id= "textMusic">Click the buttons to play or pause the audio.</p>
+   
+      <br>
+      <button id ="music" onclick="playAudio()" class="play">Play Audio</button>
+      <button id = "music" onclick="pauseAudio()" class="play">Pause Audio</button> 
+    </div>
+    <script src="my2.js"></script>
+</body>
+</html>
